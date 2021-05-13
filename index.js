@@ -1,10 +1,13 @@
 const rootElement = document.getElementById("root");
 //React is used to create element 
-const myFirstElement = React.createElement('ul',null,
-[
-React.createElement('li',null,'Apple'),
-React.createElement('li',null,'Banana'),
 
-]);
+ let fruitName = 'Grapes';
+const myJSXElement = (
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>{fruitName}</li>
+    </ul>
+)
 //ReactDOM is used to render reat element
-ReactDOM.render(myFirstElement, rootElement);
+ReactDOM.render(myJSXElement, rootElement);
