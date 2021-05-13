@@ -6,7 +6,7 @@ const myJSXElement = (
     <ul>
         <li>Apple</li>
         <li>Banana</li>
-        <li>{fruitName}</li>
+        <li>{fruitName.toUpperCase()}</li>
     </ul>
 )
 //ReactDOM is used to render reat element
